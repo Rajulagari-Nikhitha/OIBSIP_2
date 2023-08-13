@@ -1,0 +1,72 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root {font-family: "Roboto", sans-serif;
+    --color: rgb(14, 15, 6);
+    --color2: rgb(251, 249, 249);
+  
+  }
+  
+  body {
+    background-image: url("https://media.istockphoto.com/id/824800468/photo/sun-on-blue-sky-with-clouds.webp?b=1&s=170667a&w=0&k=20&c=rVSwIECCenLv_NYV76uQQdhc1VwOSkPqoIjHuqNu_sw=");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+  
+  }
+  label {
+   font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  input {
+    margin: 50px 0 10px;
+    padding: 7px;
+    font-size: 20px;
+  }
+  .result {
+    margin: 10px 0 50px;
+    font-size: 26px;
+    color: rgb(8, 8, 8);
+    letter-spacing: 1px;
+    height: 1em;
+    font-weight: bold;
+  }
+  .blink{
+    animation: blink 2s linear infinite;
+    color: crimson;
+  }
+  
+  button {
+    width: 200px;
+    margin: 0 30px;
+    padding: 10px 30px;
+    font-size: 25px;
+  }
+
+  @keyframes blink{
+    50%{
+      opacity: 0;
+    }
+  }
+  @media screen and (max-width: 500px){
+    label{
+      font-size: 35px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    button {
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+  }
